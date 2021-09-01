@@ -1,0 +1,85 @@
+/* signuppage styles*/
+.signUp{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.signUpCred{
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.signup-users
+{
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    left: 2rem;
+}
+.signUpSection{
+
+}
+
+
+
+/* IndexPage */
+input{
+    display: flex;
+    border: none;
+    border-radius: 2rem;
+    width: 100%;
+    align-content: center;
+}
+button{
+    border: none;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+.landing-page{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.6), rgba(0,212,255,0.5));
+    margin: 15rem;
+    padding: 15rem;
+    /* margin-left: 20%; */
+    overflow: hidden ;
+}
+.sm-list
+{
+    display: flex;
+}
+.sm-list:hover{
+animation: hue-shift,infinite,6s;
+}
+.sm-link{
+    color: #929fc5;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #929fc5;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 2.5rem;
+    text-decoration: none;
+  }
+  .sm-link i{
+    margin: auto;
+}
+@keyframes hue-shift{
+    from{
+         filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg)
+    }
+}
