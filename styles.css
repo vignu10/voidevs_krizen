@@ -3,6 +3,18 @@ html{
 }
 .formContainer{
     background: linear-gradient(left to right,rgb(255, 0, 0));
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.signup{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center
+    
+
 }
 #signUp{
     background: linear-gradient(left to right,rgb(255, 0, 0));
