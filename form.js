@@ -27,7 +27,7 @@ function signUp()
 }
 
 //login
-function logIn(){
+function signIn(){
     var email=document.getElementById("email");
     var password=document.getElementById("password");
 
@@ -39,7 +39,7 @@ function logIn(){
 //logout
 
 
-function logOut()
+function signOut()
 {
     auth.signOut();
     alert("Successfully logged out")

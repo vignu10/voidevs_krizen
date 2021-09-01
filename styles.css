@@ -4,3 +4,6 @@ html{
 .formContainer{
     background: linear-gradient(left to right,rgb(255, 0, 0));
 }
+#signUp{
+    background: linear-gradient(left to right,rgb(255, 0, 0));
+}
