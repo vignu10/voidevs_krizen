@@ -6,8 +6,7 @@ html{
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 .signup{
     display: flex;
