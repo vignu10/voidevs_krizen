@@ -54,6 +54,7 @@ button{
 .intro
 {
     font-size: xx-large;
+    color: #fff;
 }
 body{
     background: rgb(2,0,36);
@@ -66,6 +67,7 @@ body{
 .sm-list
 {
     display: flex;
+    animation: hue-shift,infinite,6s,alternate;
 }
 .sm-list:hover{
 animation: hue-shift,infinite,6s;
@@ -88,6 +90,6 @@ animation: hue-shift,infinite,6s;
          filter: hue-rotate(0);
     }
     to{
-        filter: hue-rotate(360deg)
+        filter: hue-rotate(360deg);
     }
 }
