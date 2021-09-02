@@ -1,16 +1,18 @@
 /* signuppage styles*/
 .signup{
+    position: relative; 
+    left: 1%;
     display: flex;
     position: relative;
     align-items: center;
-    text-decoration: none;
+    text-decoration:underline;
     margin-top: 1rem;
 }
 .signUpCred{
     border-radius: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
 }
 .signup-users
 {
@@ -20,10 +22,6 @@
     align-items: center;  
     left: 2rem;
 }
-.signUpSection{
-
-}
-
 
 /* IndexPage */
 input{
@@ -32,17 +30,28 @@ input{
     display: flex;
     border: none;
     border-radius: 2rem;
-    width: 100%;
+    width: 80%;
     align-content: center;
 }
 button{
-    text-align: justify;
+    position: relative; 
+    text-align: center;
     border: none;
     border-radius: 0.8rem;
     margin: 1rem;
     justify-content: space-evenly;
-
+    height:30px; 
+    background: rgb(142, 61, 158);
 }
+.button-btn{
+    width: 10rem;
+    background-image: linear-gradient(to right,#ae94f8,#28b9d3);
+    color: #fff;
+    cursor: pointer;
+    }
+    .button-btn:hover{
+        background-image: linear-gradient(to left,#ff83d5,#ffccb0);
+    }
 .landing-page{
     width: 100%;
     position: relative;
@@ -57,17 +66,23 @@ button{
     color: #fff;
 }
 body{
+    position: relative; 
+    left: 20%;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.6), rgba(0,212,255,0.5));
+    background: linear-gradient(90deg, rgba(3, 3, 100, 0.5) 0%, rgba(21, 21, 158, 0.6), rgba(0,212,255,0.5));
     margin: 14rem;
     padding-left: (100%-5rem);
     /* margin-left: 20%; */
     overflow: hidden ;
+    display:block;
+    text-align:justify;
 }
 .sm-list
 {
     display: flex;
-    animation: hue-shift,infinite,6s,alternate;
+    margin-right: 10%;
+    margin-left: 5%;
+    width:180%;
 }
 .sm-list:hover{
 animation: hue-shift,infinite,6s;
@@ -81,9 +96,14 @@ animation: hue-shift,infinite,6s;
     display: flex;
     margin-right: 2.5rem;
     text-decoration: none;
+    
   }
   .sm-link i{
     margin: auto;
+}
+.sm-link:hover{
+    background-image: linear-gradient(to right,#a971ff,#00f0ff);
+    color: #fff;
 }
 @keyframes hue-shift{
     from{
