@@ -24,7 +24,7 @@
 }
 
 /* IndexPage */
-input{
+.indexIn{
     text-align: center;
     height: 2rem;
     display: flex;
@@ -80,9 +80,7 @@ body{
 .sm-list
 {
     display: flex;
-    margin-right: 10%;
-    margin-left: 5%;
-    width:180%;
+    animation: hue-shift,infinite,6s,alternate;
 }
 .sm-list:hover{
 animation: hue-shift,infinite,6s;
