@@ -62,40 +62,58 @@ body{
     border-radius: 2rem;
     z-index: -1;
     width: 5rem;
+    opacity: 0.5;
+    backdrop-filter: blur(2rem);    
 }
 #signIn{
     margin-right: 5rem;
+    margin-left: -20rem;
 }
 .intro{
-    margin-top: 14rem;
-    color: #fff;
-    margin-left: 33rem;
-    font-size: xx-large;
-    z-index: 100;
+   position: absolute;
+   padding-top: 1000px;
+   width: 8rem;
+   font-size: x-large;
+   color: azure;
+   margin-top: 5rem;
 }
 .formContainer{
     display: flex;
     flex-direction: column;
-    margin-left: 1px;
+    margin-left: -20rem;
+    
     z-index: 10000;
+
+}
+#email{
+    margin-top: 25rem;
 
 }
 .indexIn{
     margin-bottom: 20px;
     margin-right: 30px;
+    margin-left: -20rem;
     height: 15px;
     width: 15rem;
     border-radius: 10px;
     text-align: center;
+    opacity: 0.5;
+    z-index: inherit;
+
 }
 .formContainer{
-    margin-left: 35rem;
+    margin-left: 20rem;
 }
+
 .indexButton:hover
 {
     background-image: linear-gradient(to right,#a971ff,#00f0ff);
     transition-duration: 1s;
     color: #fff;
+}
+#signOut{
+    margin-top: -2.5rem;
+    margin-left: -10rem;
 }
 #signIn{
     margin-bottom: 20px;
@@ -103,8 +121,11 @@ body{
 
 .sm-list{
     display: flex;
+    margin-top: 5rem;
+    margin-left: -20rem;
 }
 .sm-link{
+ 
   color: #929fc5;
   width: 2rem;
   height: 2rem;
@@ -112,7 +133,7 @@ body{
   border-radius: 50%;
   display: flex;
   margin-right: 2.5rem;
-  margin-bottom: 2px;
+  margin-top: 2px;
   text-decoration: none;
 
 }
@@ -123,6 +144,7 @@ body{
     background-image: linear-gradient(to right,#a971ff,#00f0ff);
     color: #fff;
 }
+
 .signup{
     margin-left: 35rem;
     margin-top: 20px;
@@ -139,8 +161,8 @@ a{
 .blob-large{
     width: 200px;
     position: absolute;
-    margin-top: -27rem;
-    margin-left: 3rem;
+    margin-top: -26rem;
+    margin-left:-16rem;
     z-index: -300;
     
 }
@@ -150,8 +172,8 @@ a{
 .blob-bean{
     width: 100px;
     position: absolute;
-   margin-top: -425px;
-   margin-left: 50px;
+   margin-top: -400px;
+   margin-left: -280px;
     animation: move-down 2s infinite alternate;
 }
 
@@ -191,7 +213,12 @@ a{
     opacity: .5;
     z-index: -1;
 }
-
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
 
 /* animations */
 @keyframes hue-shift{
@@ -224,27 +251,8 @@ a{
 
 /* mediaquery */
 @media screen and (max-width: 768px){
-    .formContainer{
-        align-self: center;
-    }
-
-    .blob1{
-
-        display: none;
-    }
-    .blob2{
-           left: 30rem;        
-           bottom: -1rem;
-           top: revert;
-           width: 25%;
-    }
-    .blob3{
-         right: 3rem;
-         bottom: 25rem;
-    }
-    .blob4{
-        display: none;
-    }
+   
+    
     
 }
 @media screen and (max-width: 700px){
