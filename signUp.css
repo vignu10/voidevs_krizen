@@ -1,0 +1,72 @@
+#signupwrap{
+   max-width: 500px;
+   margin: auto;
+}
+.signup-users{
+    margin-top: 18rem;
+    opacity: 0.5;
+    backdrop-filter: blur(2rem); 
+}
+.signupBody{
+    overflow: hidden;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right,#3B4679,#2B3153);
+}
+.signUpCred{
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    backdrop-filter: blur(2rem); 
+    text-align: center;
+}
+.signupemail{
+    margin-right: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+#UserName{
+    margin-right: 1.8rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+#Age{
+    border-radius: 2rem;
+    text-align: center;
+}
+.signuppassword{
+    margin-right: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+.signupButton{
+    border-radius: 2rem;
+}
+
+.signupButton:hover{
+    background-image: linear-gradient(to right,#a971ff,#00f0ff);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.hue-shift{
+    animation: hue-shift 5s infinite alternate;
+}
+
+/* Animations */
+@keyframes hue-shift{
+    from{
+         filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg)
+    }
+}
