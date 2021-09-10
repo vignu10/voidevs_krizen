@@ -26,6 +26,7 @@ body{
     float: right;
     background-color: #fdfdfd;
     padding: 150px;
+    border: 1px solid black;
 }
 
 .inner-container h1{
@@ -48,10 +49,18 @@ body{
     font-weight: 700;
     font-size: 13px;
 }
+.found{
+    margin-bottom: 40px;
+
+}
 
 @media screen and (max-width:1200px){
     .inner-container{
         padding: 80px;
+    }
+    .found{
+        margin-bottom: 40px;
+        
     }
 }
 
@@ -63,6 +72,10 @@ body{
     .inner-container{
         width: 100%;
     }
+    .found{
+        margin-bottom: 40px;
+        
+    }
 }
 
 @media screen and (max-width:600px){
@@ -71,5 +84,9 @@ body{
     }
     .inner-container{
         padding: 60px;
+    }
+    .found{
+        margin-bottom: 40px;
+        
     }
 }
