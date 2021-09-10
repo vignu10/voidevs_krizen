@@ -48,12 +48,38 @@
     color: #fff;
 }
 
+.enter{
+
+    margin-top: -3rem;
+    margin-bottom: 20px;
+    color: white;
+}
 
 
 .hue-shift{
     animation: hue-shift 5s infinite alternate;
 }
-
+.blob{
+    position: absolute;
+    z-index: -1;
+}
+.blob1{
+    top: -11rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blob2{
+    top: 15rem;
+    left: -17%;
+}
+.blob3{
+    right: 5rem;
+    bottom: -24rem;
+}
+.blob4{
+    left: -21rem;
+    bottom: -17rem;
+}
 /* Animations */
 @keyframes hue-shift{
     from{
