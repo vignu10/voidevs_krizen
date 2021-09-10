@@ -12,36 +12,18 @@ var firebaseConfig = {
     firebase.initializeApp(firebaseConfig);
 
     const auth =  firebase.auth();
+    const database = firebase.database();
    
     //signup function
      function signUp(){
       var email = document.getElementById("email");
       var password = document.getElementById("password");
-  
-      const promise = auth.createUserWithEmailAndPassword(email.value,password.value).then((usercredential)=>{
-        var user=usercredential.user;
+      const promise = auth.createUserWithEmailAndPassword(email.value,password.value)
         promise.catch(e=>alert(e.message));
-        writeData()
       alert("SignUp Successfully");
-      })
-      .catch((error)=>{
-        var errorCode=error.code;
-        var errorMessage=error.message;
-      });
-    }
-  
-  function writeData(){
-    var database = firebase.database();
-        var UserName=document.getElementById("UserName").value;
-        var Age=document.getElementById("Age").value;
-        function writeUserData(UserName, email, Age) {
-  firebase.database().ref('users').set({
-    username: UserName,
-    email: email,
-    Age: Age
-  });
-  }
-}
+     }
+
+
     //signIN function
     function  signIn(){
       var email = document.getElementById("email");
@@ -68,4 +50,30 @@ var firebaseConfig = {
       }
     })
 
-c 
+function googleSign(){
+  var provider = new firebase.auth.GoogleAuthProvider();
+  provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+  firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+  firebase.auth().signInWithRedirect(provider);
+  
+}
