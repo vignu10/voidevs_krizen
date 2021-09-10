@@ -21,6 +21,7 @@ var firebaseConfig = {
       const promise = auth.createUserWithEmailAndPassword(email.value,password.value).then((usercredential)=>{
         var user=usercredential.user;
         promise.catch(e=>alert(e.message));
+        writeData()
       alert("SignUp Successfully");
       })
       .catch((error)=>{
