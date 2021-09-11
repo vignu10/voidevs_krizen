@@ -47,7 +47,7 @@ var firebaseConfig = {
         window.open('shopping.html')
   
       }else{
-        alert("No Active user Found")
+        
       }
     })
 

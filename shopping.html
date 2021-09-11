@@ -14,7 +14,7 @@
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
 	
 	<script src="form.js"></script>
-
+	<script src="shoppingForm.js"></script>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -162,7 +162,7 @@
    					<div class="card-text">
    						Made of teak and rosewood. Available in all colors and forms. we'll manufacture according to your suggestions. <br/>
 						<h3>Rs.10,000</h3>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
    					</div>
    				</div>
    			</div>
@@ -176,7 +176,7 @@
    					<div class="card-text">
 						Made of teak and rosewood.Available in all colors.Cushion is made of 100% cotton.<br/>
 						<h3>Rs.50,000</h3>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
    					</div>
    				</div>
    			</div>
@@ -190,7 +190,7 @@
    					<div class="card-text">
 						Made of teak and rosewood.Available in all colors and sizes. It has storage.(78*60 inch) / (198.1*152.4cm)<br/>
 						<h3>Rs.80,000</h3>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
    					</div>
    				</div>
    			</div>
@@ -205,7 +205,7 @@
    					<div class="card-text">
 						 Why muster all the energy to turn your head when the swivel chair exists?The pebbled fabric makes it fascinating.  <br/>
 						 <h3>Rs.60,000</h3>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
    					</div>
    				</div>
    			</div>
@@ -238,7 +238,7 @@
    					<div class="card-text">
 						Advantage of this kinda Wardrobes are,it can be customized interms of colors, shelves and exterior shutter design.<br/>
 						<h3>Rs.60,000</h3>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
    					</div>
    				</div>
    			</div>
@@ -252,7 +252,7 @@
    					<div class="card-text">
    						This wardrobe comprises both the classic and sliding wardrobe. It is available in all the colors .<br/>
 						<h3>Rs.90,000</h3>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
    					</div>
    				</div>
    			</div>
@@ -266,7 +266,7 @@
    					<div class="card-text">
 						The great advantage of this one is,shelves,space between each rack and westernized.<br/>
 						<h3>Rs.1,00,000</h3>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
    					</div>
    				</div>
    			</div>
@@ -281,7 +281,7 @@
    					<div class="card-text">
 						Sliding wardrobes saves space and Our unique Tri-Panel system provides flexibility to create dramatic effect. Available in colors.<br/>
 						<h3>Rs.80,000</h3>
-   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+   						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
    					</div>
    				</div>
    			</div>
@@ -312,7 +312,7 @@
 					<div class="card-text">
 					 This makes the kitchen looks elegant.Things can be arranged properly and neatly.It makes the place more spacious.Available in all colors.<br/>
 					 <h3>Rs.60,000</h3>
-						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
 					</div>
 				</div>
 			</div>
@@ -326,7 +326,7 @@
 					<div class="card-text">
 						Suitable for 3-4 Burners 1150 CMH, Uses panels to separate grease & spice, very effective in removing odors..<br/>
 					 <h3>Rs.8,099</h3>
-						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
 					</div>
 				</div>
 			</div>
@@ -340,7 +340,7 @@
 					<div class="card-text">
 						Bosch 6 kg 5 Star Inverter Fully Automatic Front Loading Washing Machine with In - built Heater (WLJ2016WIN, White ).<br/>
 					 <h3>Rs.50,000</h3>
-						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
 					</div>
 				</div>
 			</div>
@@ -355,7 +355,7 @@
 					<div class="card-text">
 						Samsung 810 Litres Digital Inverter Side-by-Side Door Refrigerator (Twin Cooling Plus, RF28N9780SG/TL, Black Inox)<br/>
 					 <h3>Rs.2,80,004</h3>
-						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
 					</div>
 				</div>
 			</div>
@@ -386,7 +386,7 @@
 					<div class="card-text">
 						LUMINOUS New York Brooklyn 1200 mm 3 Blade. The design is inspired from a bird's wings. Since thee wing is bent it provides air all around. At the centre there is a night light.<br/>
 					 <h3>Rs.30,000</h3>
-						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
 					</div>
 				</div>
 			</div>
@@ -400,7 +400,7 @@
 					<div class="card-text">
 						Carrier Flair X 1 Ton Split AC :1 ton capacity, BEE Rating: 3 Star,1 year warranty,Bio Filter, Leakage Detector,Super Turbo Mode, Noise Level Indoor: 38DB<br/>
 					 <h3>Rs.20,000</h3>
-						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success" add-cart> onclick="addToCart()"Add To Cart</a>
 					</div>
 				</div>
 			</div>
@@ -414,7 +414,7 @@
 					<div class="card-text">
 						Ujjaini Fancy Decorative Wall Lamp/Light with Latest Cool Design. Made From High Quality Material, Attractive Look With Stylish Design & Color<br/>
 					 <h3>Rs.1,000</h3>
-						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
 					</div>
 				</div>
 			</div>
@@ -429,7 +429,7 @@
 					<div class="card-text">
 						Samsung Q7CN Curved QLED TV (55-inch),40 inch LED display,Resolution 1366X720, Connectivity 2 HDMI, 2 AV, 1 Micro SD, LAN,Speaker Output 20 W<br>
 					 <h3>Rs.280,004</h3>
-						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success">Add To Cart</a>
+						<a class="btn btn-info">Buy Now</a> &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
 					</div>
 				</div>
 			</div>
