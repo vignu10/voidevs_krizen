@@ -186,14 +186,6 @@
 .inner-div3:hover{
 	transform: scale(1.2)
 }
-.inner-div4{
-	height: 300px;
-	width: 100%;
-	background-size: cover;
-	background-position: center;
-	transition: all 0.5s ease;
-	background-image:url(../img/Presentation1.png)
-}
 .inner-div4:hover{
 	transform: scale(1.2)
 }

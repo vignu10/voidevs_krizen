@@ -44,6 +44,7 @@ var firebaseConfig = {
       if(user){
         var uid = user.uid;
         alert("Active user ");
+        window.open('shopping.html')
   
       }else{
         alert("No Active user Found")
@@ -74,6 +75,6 @@ function googleSign(){
     var credential = error.credential;
     // ...
   });
-  firebase.auth().signInWithRedirect(provider);
-  
+  firebase.auth().signInWithRedirect(window.open('shopping.html'));
+   
 }
