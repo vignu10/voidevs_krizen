@@ -28,15 +28,31 @@ var firebaseConfig = {
     function  signIn(){
       var email = document.getElementById("email");
       var password  = document.getElementById("password");
-      const promise = auth.signInWithEmailAndPassword(email.value,password.value).then(window.open(shopping.html));
-      promise.catch(e=>alert(e.message));  
+      firebase.auth().signInWithEmailAndPassword(email.value, password.value)
+      .then(user=> {
+        window.open("shopping.html");
+        console.log("redirect")
+        wrongEmail.style.display = "none"
+      })
+      .catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+      
+              if (errorCode === 'auth/user-not-found') {
+                 console.log('user not found');
+              } else if (errorCode === 'auth/wrong-password') {
+                 console.log('Password invalid');
+              }
+      });
+   
+
     }
-  
   
     //signOut
     function signOut(){
       auth.signOut();
-      alert("SignOut Successfully from System");
+      alert("SignOut Successfully");
     }
   
     //active user to homepage
@@ -76,3 +92,4 @@ function googleSign(){
   firebase.auth().signInWithRedirect(window.open('shopping.html'));
    
 }
+
