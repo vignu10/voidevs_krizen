@@ -33,6 +33,7 @@ var firebaseConfig = {
         window.open("shopping.html");
         console.log("redirect")
         wrongEmail.style.display = "none"
+
       })
       .catch(function(error) {
             // Handle Errors here.
