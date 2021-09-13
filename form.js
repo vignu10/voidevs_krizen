@@ -12,7 +12,7 @@ var firebaseConfig = {
     firebase.initializeApp(firebaseConfig);
 
     const auth =  firebase.auth();
-    const database = firebase.database();
+    const database = firebase.firestore();
    
     //signup function
      function signUp(){
@@ -94,3 +94,29 @@ function googleSign(){
    
 }
 
+
+
+
+
+function addToCart(){
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      database.collection("users").doc(user.uid).set({
+        first: "vibin",
+        last: "Lovelace",
+        born: 1815
+    })
+    .then((docRef) => {
+        alert("Document written with ID: ", docRef.id);
+    })
+    .catch((error) => {
+        alert("Error adding document: ", error);
+    });
+      console.log(user.uid);
+    } else {
+      // User not logged in or has just logged out.
+    }
+  });
+  
+  
+}

@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="css/shopping.css">
    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
 	
 	<script src="form.js"></script>
-	<script src="shoppingForm.js"></script>
     <title>VOIDEVSTORE</title>
   </head>
   <body>
@@ -159,11 +158,11 @@
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/C101.png">
    				<div class="card-body">
-   					<div class="card-title"> DINING SET</div>
+   					<div class="card-title" id="dining"> DINING SET</div>
    					<div class="card-text">
    						Made of teak and rosewood. Available in all colors and forms. we'll manufacture according to your suggestions. <br/>
 						<h3>Rs.10,000</h3>
-   						 &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()">Add To Cart</a>
+   						 &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()" >Add To Cart</a>
    					</div>
    				</div>
    			</div>
