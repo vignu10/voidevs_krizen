@@ -30,30 +30,11 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+      </li>	
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
     <ul class="navbar-nav mr-auto">
     	<li class="nav-item">
-    		<a class="btn btn-lg btn-danger text-light ml-5" onclick="signOut()"><i class="fa fa-logout" aria-hidden="true"></i> LOGOUT</a>
+    		<a class="btn btn-lg btn-danger text-light ml-5" onclick="signOut()"><i class="fa fa-logout" aria-hidden="true" id="shopLogout"></i> LOGOUT</a>
     	</li>
     </ul>
   </div>
@@ -115,7 +96,7 @@
 		<div class="col-md-6">
 			<div class="outer-div">
 				<div class="inner-div2">
-					<h1 class="zoom-box-text"><mark>KITCHEN GADGETS</mark></h1>
+					<h1 class="zoom-box-text"><mark><a href="#kitchen gadgets">KITCHEN GADGETS</a></mark></h1>
 				</div>
 			</div>
 		</div>
@@ -123,7 +104,7 @@
 		<div class="col-md-6">
 			<div class="outer-div">
 				<div class="inner-div3">
-					<h1 class="zoom-box-text"><mark>ELECTRONICS</mark></h1>
+					<h1 class="zoom-box-text"><mark><a href="#electronics">ELECTRONICS</a></mark></h1>
 				</div>
 			</div>
 		</div>
@@ -131,7 +112,7 @@
 		<div class="col-md-6">
 			<div class="outer-div">
 				<div class="inner-div4">
-					<h1 class="zoom-box-text"><mark>WARDROBES</mark></h1>
+					<h1 class="zoom-box-text"><mark><a href="#wardrobes">WARDROBES</a></mark></h1>
 				</div>
 			</div>
 		</div>
@@ -161,7 +142,7 @@
    					<div class="card-title" id="dining"> DINING SET</div>
    					<div class="card-text">
    						Made of teak and rosewood. Available in all colors and forms. we'll manufacture according to your suggestions. <br/>
-						<h3>Rs.10,000</h3>
+						<h3 id="diningSet">Rs.10,000</h3>
    						 &nbsp; &nbsp; <a class="btn btn-success add-cart" onclick="addToCart()" >Add To Cart</a>
    					</div>
    				</div>
@@ -195,7 +176,7 @@
    				</div>
    			</div>
    		</div>
-   		
+   		 id="diningSet"
    		
    		<div>
    			<div class="card product-card">
@@ -336,7 +317,7 @@
 			<div class="card product-card">
 				<img class="card-img-top img-fluid" src="img/product/c61.png">
 				<div class="card-body">
-					<div class="card-title">DISHWASHER</div>
+					<div class="card-title">WASHING MACHINE</div>
 					<div class="card-text">
 						Bosch 6 kg 5 Star Inverter Fully Automatic Front Loading Washing Machine with In - built Heater (WLJ2016WIN, White ).<br/>
 					 <h3>Rs.50,000</h3>
@@ -351,7 +332,7 @@
 			<div class="card product-card">
 				<img class="card-img-top img-fluid" src="img/product/c141.png">
 				<div class="card-body">
-					<div class="card-title"> REFRIDGERATOR</div>
+					<div class="card-title"> REFRIGERATOR</div>
 					<div class="card-text">
 						Samsung 810 Litres Digital Inverter Side-by-Side Door Refrigerator (Twin Cooling Plus, RF28N9780SG/TL, Black Inox)<br/>
 					 <h3>Rs.2,80,004</h3>
@@ -525,8 +506,12 @@
    		<div class="row">
    			<div class="col-md-6">
    				<h3>VOIDEVSTORE</h3>
-   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et eligendi at illo? Repellendus explicabo earum ab repudiandae fugit et eaque iusto cumque labore! At, accusamus explicabo reprehenderit natus cumque!</p>
-   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem consequatur vero reiciendis pariatur, qui, assumenda nobis vitae quia natus quod, iste quae. Corrupti, eum, adipisci mollitia voluptatum est consequatur hic?</p>
+   				<p><mark>CREATED BY:</mark></P>
+					<p>VIGNESHWAR<br>
+						SWARNA SHREE<br>
+						SATHEESH KUMAR<br>
+						SRINATH<br>
+					</p>
    			</div>
    			
    			

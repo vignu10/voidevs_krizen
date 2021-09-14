@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="signUp.css">
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script> 
 <script src="form.js"></script>
     <title>VOIDEVSTORE</title>
 </head>
@@ -17,9 +17,12 @@
         <h3 class="enter">Enter Credentials</h3>
     </div>
     <div class="signUpCred">
+        <input type="text" value="" class="userName" id="UserName" placeholder="User Name">
+        <input type="text" name="" id="mobileNo" class="mobileNo" placeholder="Mobile Number">
+        <input type="text" name="" id="Age" class="age" placeholder="Age">
     <input type="email" placeholder="email here" id="email" class="signupemail"><br>
     <input type="password" placeholder="password here" id="password" class="signuppassword"><br>
-    <button onclick="signUp(); writeData()" id="signUp" class="signupButton hue-shift">SignUp</button>
+    <button onclick="signUp()" id="signUp" class="signupButton hue-shift">SignUp</button>
 </div>
 </div>
 <img src="./images/liq-1.png" alt="" class="blob blob1 hue-shift">

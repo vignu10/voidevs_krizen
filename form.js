@@ -21,6 +21,29 @@ var firebaseConfig = {
       const promise = auth.createUserWithEmailAndPassword(email.value,password.value)
         promise.catch(e=>alert(e.message));
       alert("SignUp Successfully");
+      var UserName=document.getElementById("UserName");
+      var mobileNo=document.getElementById("mobileNo");
+      var Age=document.getElementById("Age");
+      var email=document.getElementById("email");
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          database.collection("users").doc(user.uid).set({
+            UserName:UserName.value,
+            mobileNo:mobileNo.value,
+            Age:Age.value,
+            email:email.value
+        })
+        .then((docRef) => {
+            alert("Document written with ID: ", docRef.id);
+        })
+        .catch((error) => {
+            console.log("Error adding document: ", error);
+        });
+          console.log(user.uid);
+        } else {
+          // User not logged in or has just logged out.
+        }
+      });
      }
 
 
@@ -99,12 +122,11 @@ function googleSign(){
 
 
 function addToCart(){
+  var dining=document.getElementById("diningSet");
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       database.collection("users").doc(user.uid).set({
-        first: "vibin",
-        last: "Lovelace",
-        born: 1815
+        dining:dining.value
     })
     .then((docRef) => {
         alert("Document written with ID: ", docRef.id);
