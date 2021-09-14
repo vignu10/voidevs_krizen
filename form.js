@@ -24,9 +24,7 @@ var firebaseConfig = {
       var UserName=document.getElementById("UserName");
       var mobileNo=document.getElementById("mobileNo");
       var Age=document.getElementById("Age");
-      var email=document.getElementById("email");
-      firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
+      var email=document.getElementById("email")
           database.collection("users").doc(user.uid).set({
             UserName:UserName.value,
             mobileNo:mobileNo.value,
@@ -40,10 +38,6 @@ var firebaseConfig = {
             console.log("Error adding document: ", error);
         });
           console.log(user.uid);
-        } else {
-          // User not logged in or has just logged out.
-        }
-      });
      }
 
 
@@ -118,7 +112,7 @@ function googleSign(){
 }
 
 function addToCart(){
-        window.location("cart.html");
+        window.open("cart.html");
 }
 function checkOut(){
   var fullName=document.getElementById("fname");
@@ -136,7 +130,7 @@ function checkOut(){
         zip: zip.value
     })
     .then((docRef) => {
-        alert("Document written with ID: ", docRef.id);
+      alert("Order Placed");
     })
     .catch((error) => {
         console.log("Error adding document: ", error);
