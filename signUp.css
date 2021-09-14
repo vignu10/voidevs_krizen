@@ -20,11 +20,11 @@
     text-align: center;
 }
 .signupemail{
-    margin-right: 2rem;
+    position: absolute  ; 
     border-radius: 2rem;
     text-align: center;
     margin-top: 4rem;
-    margin-left: 2.5rem;
+    margin-left: 14rem;
 }
 #UserName{
     margin-right: 1.8rem;
@@ -40,21 +40,22 @@
     margin-left: 14rem;
 }
 #Age{
+    position: absolute;
     border-radius: 2rem;
     text-align: center;
     margin-bottom: -4rem;
-    margin-left: -13.5rem;
+    margin-left: 0.4;
 }
 .signuppassword{
-    margin-right: 1rem;
+    position: absolute;
+    margin-right: -13em;
     border-radius: 2rem;
     text-align: center;
     margin-top: 12rem;
-    margin-left: -27.8rem;
 }
 .signupButton{
     border-radius: 2rem;
-    margin-top: 12rem;
+    margin-top: 12.2rem;
     margin-left: 1.5rem;
 }
 

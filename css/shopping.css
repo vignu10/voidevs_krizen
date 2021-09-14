@@ -58,7 +58,9 @@
 .navbar .navbar-link:hover {
   color: #ecdbff;
 }
-
+a{
+	text-decoration: none;
+}
 @media (max-width: 575px) {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #ecf0f1;

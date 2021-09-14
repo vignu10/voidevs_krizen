@@ -30,11 +30,30 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>	
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
     </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
     <ul class="navbar-nav mr-auto">
     	<li class="nav-item">
-    		<a class="btn btn-lg btn-danger text-light ml-5" onclick="signOut()"><i class="fa fa-logout" aria-hidden="true" id="shopLogout"></i> LOGOUT</a>
+    		<a class="btn btn-lg btn-danger text-light ml-5" onclick="signOut()"><i class="fa fa-logout" aria-hidden="true"></i> LOGOUT</a>
     	</li>
     </ul>
   </div>
@@ -88,7 +107,7 @@
 		<div class="col-md-6">
 			<div class="outer-div">
 				<div class="inner-div1">
-					<h1 style="color:rgb(83, 6, 6);" class="zoom-box-text"><mark>FURNITURES</mark></h1>
+					<h1 style="color:rgb(83, 6, 6);" class="zoom-box-text"><mark><a href="#furnitures">FURNITURES</a></h1>
 				</div>
 			</div>
 		</div>
@@ -127,7 +146,7 @@
    <div class="container">
    	<div class="row mt-5 mb-5">
    		<div class="col-md-12">
-   			<h1 class="text-center">FURNITURES</h1>
+   			<h1 class="text-center" id="furnitures">FURNITURES</h1>
    		</div>
    	</div>
    </div>
@@ -203,7 +222,7 @@
    <div class="container">
    	<div class="row mt-5 mb-5">
    		<div class="col-md-12">
-   			<h1 class="text-center">WARDROBES</h1>
+   			<h1 class="text-center" id="wardrobes">WARDROBES</h1>
    		</div>
    	</div>
    </div>
@@ -277,7 +296,7 @@
    <div class="container">
 	<div class="row mt-5 mb-5">
 		<div class="col-md-12">
-			<h1 class="text-center">KITCHEN GADGETS</h1>
+			<h1 class="text-center" id="kitchen gadgets">KITCHEN GADGETS</h1>
 		</div>
 	</div>
 </div>
@@ -332,7 +351,7 @@
 			<div class="card product-card">
 				<img class="card-img-top img-fluid" src="img/product/c141.png">
 				<div class="card-body">
-					<div class="card-title"> REFRIGERATOR</div>
+					<div class="card-title"> REFRIDGERATOR</div>
 					<div class="card-text">
 						Samsung 810 Litres Digital Inverter Side-by-Side Door Refrigerator (Twin Cooling Plus, RF28N9780SG/TL, Black Inox)<br/>
 					 <h3>Rs.2,80,004</h3>
@@ -351,7 +370,7 @@
 <div class="container">
 	<div class="row mt-5 mb-5">
 		<div class="col-md-12">
-			<h1 class="text-center">ELECTRONICS</h1>
+			<h1 class="text-center" id="electronics">ELECTRONICS</h1>
 		</div>
 	</div>
 </div>
@@ -506,7 +525,7 @@
    		<div class="row">
    			<div class="col-md-6">
    				<h3>VOIDEVSTORE</h3>
-   				<p><mark>CREATED BY:</mark></P>
+   				<<p><mark>CREATED BY:</mark></P>
 					<p>VIGNESHWAR<br>
 						SWARNA SHREE<br>
 						SATHEESH KUMAR<br>

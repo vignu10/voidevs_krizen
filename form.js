@@ -117,28 +117,35 @@ function googleSign(){
    
 }
 
-
-
-
-
 function addToCart(){
-  var dining=document.getElementById("diningSet");
+        window.location("cart.html");
+}
+function checkOut(){
+  var fullName=document.getElementById("fname");
+  var address=document.getElementById("adr");
+  var city=document.getElementById("city");
+  var state=document.getElementById("state");
+  var zip=document.getElementById("zip");
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      database.collection("users").doc(user.uid).set({
-        dining:dining.value
+      database.collection("cart").doc(user.uid).set({
+        fullName:fullName.value,
+        address:address.value,
+        citye:city.value,
+        state:state.value,
+        zip: zip.value
     })
     .then((docRef) => {
         alert("Document written with ID: ", docRef.id);
     })
     .catch((error) => {
-        alert("Error adding document: ", error);
+        console.log("Error adding document: ", error);
     });
       console.log(user.uid);
     } else {
       // User not logged in or has just logged out.
     }
   });
-  
-  
 }
+
+  
