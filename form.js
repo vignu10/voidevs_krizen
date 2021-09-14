@@ -14,33 +14,6 @@ var firebaseConfig = {
     const auth =  firebase.auth();
     const database = firebase.firestore();
    
-    //signup function
-     function signUp(){
-      var email = document.getElementById("email");
-      var password = document.getElementById("password");
-      const promise = auth.createUserWithEmailAndPassword(email.value,password.value)
-        promise.catch(e=>alert(e.message));
-      alert("SignUp Successfully");
-      var UserName=document.getElementById("UserName");
-      var mobileNo=document.getElementById("mobileNo");
-      var Age=document.getElementById("Age");
-      var email=document.getElementById("email")
-          database.collection("users").doc(user.uid).set({
-            UserName:UserName.value,
-            mobileNo:mobileNo.value,
-            Age:Age.value,
-            email:email.value
-        })
-        .then((docRef) => {
-            alert("Document written with ID: ", docRef.id);
-        })
-        .catch((error) => {
-            console.log("Error adding document: ", error);
-        });
-          console.log(user.uid);
-     }
-
-
     //signIN function
     function  signIn(){
       var email = document.getElementById("email");
@@ -128,6 +101,7 @@ function checkOut(){
         citye:city.value,
         state:state.value,
         zip: zip.value
+        
     })
     .then((docRef) => {
       alert("Order Placed");
@@ -142,4 +116,35 @@ function checkOut(){
   });
 }
 
+  //signup function
+  function signUp(){
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+    const promise = auth.createUserWithEmailAndPassword(email.value,password.value)
+      promise.catch(e=>alert(e.message));
+    alert("SignUp Successfully");
+    firebase.auth().onAuthStateChanged((user)=>{
+      if(user){
+    var UserName=document.getElementById("UserName");
+    var mobileNo=document.getElementById("mobileNo");
+    var Age=document.getElementById("Age");
+    var email=document.getElementById("email")
+        database.collection("users").doc(user.uid).set({
+          UserName:UserName.value,
+          mobileNo:mobileNo.value,
+          Age:Age.value,
+          email:email.value
+      })
+      .then((docRef) => {
+          alert("Document written with ID: ", docRef.id);
+      })
+      .catch((error) => {
+          console.log("Error adding document: ", error);
+      });
+        console.log(user.uid);
+      } else {
+        // User not logged in or has just logged out.
+      }
+   });
+  }
   
